@@ -92,7 +92,7 @@ async def delete_reminder(update: Update, context: ContextTypes.DEFAULT_TYPE):
 # Отправка напоминания
 async def send_reminder(chat_id, message):
     try:
-        bot = Application.builder().token("ВАШ_ТОКЕН_БОТА").build().bot
+        bot = Application.builder().token("8153929146:AAEdyJnxTeXoUfQpWk5BxbLFn3ph8xvRRD8").build().bot
         await bot.send_message(chat_id, text=f"Напоминание: {message}")
     except Exception as e:
         logger.error(f"Ошибка при отправке напоминания: {e}")
